@@ -11,17 +11,21 @@ public class ContractStringEqualsHashcode {
 	
 	public static void main(String args[])
 	{
-		String a = new String("Bhagavan");
-		String b = "Bhagavan";
-		String c = new String("Bhagavan");
-		if(a==b && a==c)
-		{ 
-			System.out.println("A hashcode"+a.hashCode()); // prints "123" as content is same
-			System.out.println("B hashcode"+b.hashCode()); // prints "123" as content is same
-			System.out.println("C hashcode"+c.hashCode()); // prints "123" as content is same
-			System.out.println("same");
-			
-		}
+		/*
+		 * String a = new String("Bhagavan"); String b = "Bhagavan"; String c = new
+		 * String("Bhagavan"); if(a==b && a==c) {
+		 * System.out.println("A hashcode"+a.hashCode()); // prints "123" as content is
+		 * same System.out.println("B hashcode"+b.hashCode()); // prints "123" as
+		 * content is same System.out.println("C hashcode"+c.hashCode()); // prints
+		 * "123" as content is same System.out.println("same");
+		 * 
+		 * }
+		 */
+		
+		String a = "xyz";
+		String b = "yxz";
+		System.out.println(a.hashCode());
+		System.out.println(b.hashCode());
 		
 		
 	}

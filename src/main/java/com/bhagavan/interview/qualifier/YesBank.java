@@ -4,7 +4,8 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-@Primary
+@Primary  // This will be injected during run time when beans are of same type.
+
 public class YesBank implements Bank{
 
 	@Override

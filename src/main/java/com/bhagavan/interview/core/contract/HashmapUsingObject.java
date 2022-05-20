@@ -12,10 +12,12 @@ hashcode and equals method in employee.java*/
 public class HashmapUsingObject {
 	public static void main(String[] args) {
 		Map<Employee, Integer> map = new HashMap<Employee,Integer>();
-		Employee e1 = new Employee("naresh");
-		Employee e2 = new Employee("naresh");
+		Employee e1 = new Employee("naresh","AP");
+		Employee e2 = new Employee("naresh","AP");
+		// Using the naresh and AP it will calulate the hashcode. so when you give the same 
+		// naresh and ap then it will give same thing.
 		map.put(e1, 1);
-		map.put(e2, 1);
+		map.put(e2, 2);
 		System.out.println(e1.hashCode());
 		System.out.println(e2.hashCode());
 		System.out.println(map.size());

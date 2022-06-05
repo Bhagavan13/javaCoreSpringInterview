@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class QualifierAnnotation {
 	
 	@Autowired
-	@Qualifier("SBI")
+	//@Qualifier("SBI")
 	Bank bank;
 	
 	
@@ -19,7 +19,7 @@ public class QualifierAnnotation {
 	@GetMapping("/roe")
 	public String  getRateOfinterest()
 	{
-		return yesBank.rateOfInterest();
+		return bank.rateOfInterest();
 	}
 	
 

@@ -15,6 +15,8 @@ public class ControllerClass {
 	AxisBank axisbank;
 	IciciBank constructorInjection; 
 	IciciBank setterInjection;
+	
+	
 	ControllerClass(IciciBank icici, AxisBank axisbank)  // This is called ConstructorBasedinjection
 	{
 		constructorInjection=icici;
@@ -36,6 +38,7 @@ public class ControllerClass {
 	@RequestMapping("/classlevel")
 	public String  getClassLevel()
 	{
+		
 		return classiciciBank.deposit();
 	}
 	
@@ -50,6 +53,7 @@ public class ControllerClass {
 	{
 		return setterInjection.deposit();
 	}
+	
 	
 
 }

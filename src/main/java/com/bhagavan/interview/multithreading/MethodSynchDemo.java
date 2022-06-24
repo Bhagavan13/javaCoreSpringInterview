@@ -2,9 +2,10 @@ package com.bhagavan.interview.multithreading;
 
 class Counter
 {
-	static int countvar=0;
-	public static synchronized  void count()
+	 int countvar=0;
+	public  synchronized void count()
 	{
+		System.out.println(Thread.holdsLock(getClass()));
 		countvar++;
 	}
 

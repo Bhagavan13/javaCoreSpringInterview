@@ -10,8 +10,10 @@ import com.bhagavan.interview.transactionalUnd.FlightBookingController;
 @ComponentScan(basePackageClasses = FlightBookingController.class)
 public class JavaCoreSpringInterviewApplication {
 
+	
 	public static void main(String[] args) {
 		SpringApplication.run(JavaCoreSpringInterviewApplication.class, args);
+	        
 	}
 
 }

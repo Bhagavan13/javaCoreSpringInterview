@@ -1,7 +1,10 @@
 package com.bhagavan.interview.controller;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bhagavan.interview.Injections.AxisBank;
@@ -15,6 +18,8 @@ public class ControllerClass {
 	AxisBank axisbank;
 	IciciBank constructorInjection; 
 	IciciBank setterInjection;
+	
+	AtomicInteger ai = new AtomicInteger();
 	
 	
 	ControllerClass(IciciBank icici, AxisBank axisbank)  // This is called ConstructorBasedinjection
@@ -53,6 +58,16 @@ public class ControllerClass {
 	{
 		return setterInjection.deposit();
 	}
+	
+	
+	@RequestMapping("/bank")
+	public String getBank(@RequestParam(value="name", required=false) String bankName)
+	{
+		return "bank name is"+bankName;
+		
+		
+	}
+	
 	
 	
 

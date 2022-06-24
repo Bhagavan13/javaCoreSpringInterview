@@ -21,7 +21,7 @@ public class ClassLevelSynch {
 	{
 		for(int i=0;i<100000;i++)
 		{
-			cc.count();
+			ClassCounter.count();
 		}
 	});
 	
